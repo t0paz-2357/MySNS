@@ -15,4 +15,53 @@
 - MySQL
 
 4) ERD
-![image](https://github.com/user-attachments/assets/5295d636-2894-4830-8839-c4991fb7de22)
+![image](https://github.com/user-attachments/assets/ced76cb3-390a-47ad-8a74-4f70859c1f07)
+// Docs: https://dbml.dbdiagram.io/docs
+Table follows {
+  follows_id integer [primary key]
+  users_id integer
+  following_users_id integer
+  // followed_users_id integer
+  // created_at timestamp
+  created_at timestamp
+  created_by varchar
+  updated_at timestamp
+  updated_by varchar
+}
+
+Table users {
+  users_id integer [primary key]
+  users_username varchar
+  users_password varchar
+  users_name varchar
+  users_phone varchar
+  users_email varchar
+  created_at timestamp
+  created_by varchar
+  updated_at timestamp
+  updated_by varchar
+}
+
+Table posts {
+  posts_id integer [primary key]
+  users_id integer
+  posts_title varchar
+  posts_content text
+  posts_private_flag varchar // or integer
+  created_at timestamp
+  created_by varchar
+  updated_at timestamp
+  updated_by varchar
+}
+
+Table comments {
+  comments_id integer [primary key]
+  posts_id integer [primary key]
+  users_id integer
+  comments_content varchar
+  comments_depth integer // 대댓글 구글링 필요
+  created_at timestamp
+  created_by varchar
+  updated_at timestamp
+  updated_by varchar
+}
