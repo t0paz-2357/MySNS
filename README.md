@@ -16,7 +16,7 @@
 
 4) ERD
 ![image](https://github.com/user-attachments/assets/ced76cb3-390a-47ad-8a74-4f70859c1f07)
-// Docs: https://dbml.dbdiagram.io/docs
+// Docs: https://dbml.dbdiagram.io/docs<br>
 Table follows {
   follows_id integer [primary key]
   users_id integer
