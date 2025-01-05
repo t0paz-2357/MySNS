@@ -10,7 +10,7 @@
 
 3) 기술 스택
 - Spring Boot
-- JAVA 22.0.2
+- JAVA 22.0.2 - LTS 버전 사용 권장 (JAVA 17)
 - Apache Tomcat
 - MySQL
 
