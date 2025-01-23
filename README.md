@@ -10,9 +10,9 @@
 
 3) 기술 스택
 - Spring Boot
-- JAVA 22.0.2 - LTS 버전 사용 권장 (JAVA 17)
+- JAVA 17 (Reinstall)
 - Apache Tomcat
-- MySQL
+- MySQL 8.0.41
 
 4) ERD
 ![image](https://github.com/user-attachments/assets/ced76cb3-390a-47ad-8a74-4f70859c1f07)
